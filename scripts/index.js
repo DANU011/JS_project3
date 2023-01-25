@@ -55,6 +55,8 @@ const show = (n) => {
      }
      console.log(n);
 
+     if(selNum.indexOf(n) != -1) return;
+
 
      cnt++;//누른 횟수
      selNum.push(n);//눌러진 정보 저장
