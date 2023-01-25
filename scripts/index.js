@@ -29,11 +29,14 @@ const boardInit = () => {
 }
 
 //전체 하트 만들기
+// 안찾고 전체를 하트로
 const showAll=()=>{
      const board = document.querySelectorAll(".boardBox");
      for(let item of board){
           item.innerHTML = `<img src="./images/hart.png">`;
      }
+     
+     //찾아서 boom대신 하트로
      /*let idx = num.indexOf(1) +1;
      console.log('last: ', idx);
      document.querySelector("#box"+idx).innerHTML =
